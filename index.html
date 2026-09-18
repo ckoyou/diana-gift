@@ -2,100 +2,19 @@
 <html lang="ru">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Для моего цветочка 🌷</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>My Love — для моего цветочка ♡</title>
 <style>
-:root{--bg:#f7ecec;--paper:#fff8f7;--ink:#4b3539;--pink:#d99aa4;--line:#e8c8cc}
-*{box-sizing:border-box}html,body{margin:0;background:#171317;color:var(--ink);font-family:Georgia,"Times New Roman",serif}
-body{overflow-x:hidden}.page{min-height:100svh;display:none;align-items:center;justify-content:center;padding:22px}
-.page.active{display:flex;animation:fade .7s ease}.paper{width:min(720px,100%);min-height:calc(100svh - 44px);background:var(--paper);border-radius:28px;padding:28px;box-shadow:0 20px 80px #0008;position:relative;overflow:hidden}
-h1,h2{margin:0 0 18px;text-align:center;font-weight:600}h1{font-size:clamp(38px,9vw,70px)}h2{font-size:clamp(30px,7vw,50px)}
-p{font-size:20px;line-height:1.65}.center{text-align:center}.muted{opacity:.75}
-.btn{border:0;border-radius:999px;padding:15px 28px;background:#e4aeb6;color:#fff;font-size:18px;box-shadow:0 8px 24px #c988933d;cursor:pointer}
-.hero{padding:0;background:#211d20;color:#fff;display:flex;align-items:flex-end}
-.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:none}
-.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 35%,#000b 100%)}
-.hero .heroText{position:relative;z-index:2;width:100%;padding:28px}
-.hero h1{text-align:left;text-shadow:0 2px 15px #000}
-.note{background:#fff5f3;border:1px solid var(--line);border-radius:20px;padding:22px;margin:14px 0;box-shadow:0 6px 20px #8d61610e}
-.reason{display:grid;grid-template-columns:110px 1fr;gap:18px;align-items:center}
-.reason img{width:110px;height:110px;object-fit:cover;border-radius:16px}
-.moments{display:grid;grid-template-columns:1fr 1fr;gap:14px}.polaroid{background:white;padding:10px 10px 28px;box-shadow:0 8px 25px #0002;transform:rotate(-1deg)}.polaroid:nth-child(2){transform:rotate(1deg)}.polaroid:nth-child(3){transform:rotate(1.5deg)}.polaroid:nth-child(4){transform:rotate(-1.2deg)}
-.polaroid img{width:100%;aspect-ratio:3/4;object-fit:cover;display:block}.caption{text-align:center;margin-top:8px;font-style:italic}
-.gift{display:flex;justify-content:center;align-items:center;height:45svh}.box{font-size:110px;cursor:pointer;animation:bob 1.8s ease-in-out infinite}
-.final{background:linear-gradient(#2a2226,#09090a);color:#fff}.final .paper{background:transparent;box-shadow:none;text-align:center}.final p{color:#eee}
-.music{border:1px solid var(--line);border-radius:22px;padding:18px;background:#fff}.track{display:flex;gap:15px;align-items:center}.track img{width:70px;height:70px;border-radius:14px;object-fit:cover}.bar{height:5px;background:#e9d8da;border-radius:9px;margin:18px 0}.bar span{display:block;width:35%;height:100%;background:#d99aa4;border-radius:9px}
-.nav{position:fixed;left:50%;bottom:15px;transform:translateX(-50%);z-index:20;display:flex;gap:8px;background:#fffddddd;padding:8px;border-radius:999px;backdrop-filter:blur(12px)}.nav button{border:0;background:#f0dadd;border-radius:50%;width:38px;height:38px;color:#5b4247}
-.heart{position:absolute;font-size:26px;color:#d99aa4;opacity:.65;animation:float 4s ease-in-out infinite}
-@keyframes fade{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}@keyframes bob{50%{transform:translateY(-12px) rotate(-2deg)}}@keyframes float{50%{transform:translateY(-12px) rotate(5deg)}}
-@media(max-width:520px){.paper{padding:20px;border-radius:22px}.reason{grid-template-columns:85px 1fr}.reason img{width:85px;height:85px}.moments{gap:9px}p{font-size:18px}}
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%;background:#120f12}
+body{display:flex;justify-content:center;align-items:center;padding:18px}
+.wrap{width:min(100%,520px);background:#fff8f6;border-radius:28px;overflow:hidden;box-shadow:0 18px 60px #0008}
+img{display:block;width:100%;height:auto}
 </style>
 </head>
 <body>
-
-<section class="page active" id="p0"><div class="paper hero">
-<img src="assets/photo1.jpeg" alt="">
-<div class="heroText"><div class="heart" style="right:28px;top:22px">♡</div>
-<h1>Для моего<br>цветочка 🌷</h1><p>У меня для тебя кое-что есть…</p>
-<button class="btn" onclick="go(1)">Открыть ♡</button></div></div></section>
-
-<section class="page" id="p1"><div class="paper">
-<div class="heart" style="right:30px">♡</div><h2>Наша история ♡</h2>
-<p>Когда-то мы просто начали общаться…</p><p>А потом как-то незаметно ты стала моей любовью.</p>
-<p>Ты — тот человек, с которым хочется быть всегда. И я безумно рад, что ты есть в моей жизни. ♡</p>
-<div class="note center"><i>Ты — моя любовь.</i></div>
-<button class="btn" onclick="go(2)">Дальше →</button></div></section>
-
-<section class="page" id="p2"><div class="paper">
-<h2>Почему я тебя люблю? ♡</h2>
-<div class="note reason"><img src="assets/photo3.jpeg"><div><b>♡ За твои глаза</b><p>Я могу смотреть в них слишком долго…</p></div></div>
-<div class="note reason"><img src="assets/photo2.jpeg"><div><b>♡ За то, что ты понимаешь</b><p>Даже когда я сам не могу нормально объяснить, что у меня в голове.</p></div></div>
-<div class="note reason"><img src="assets/photo6.png"><div><b>♡ За наши приколы</b><p>Потому что наши отношения без подколов — вообще не наши отношения.</p></div></div>
-<button class="btn" onclick="go(3)">Ещё →</button></div></section>
-
-<section class="page" id="p3"><div class="paper">
-<h2>Наши моменты ♡</h2><div class="moments">
-<div class="polaroid"><img src="assets/photo1.jpeg"><div class="caption">У моря… ♡</div></div>
-<div class="polaroid"><img src="assets/photo4.jpeg"><div class="caption">Вечерний Владивосток ♡</div></div>
-<div class="polaroid"><img src="assets/photo5.jpeg"><div class="caption">Ты и я</div></div>
-<div class="polaroid"><img src="assets/photo6.png"><div class="caption">Наши приколы</div></div>
-</div><p class="center">С тобой каждый момент особенный…</p>
-<button class="btn" onclick="go(4)">Дальше →</button></div></section>
-
-<section class="page" id="p4"><div class="paper">
-<h2>Моя любимая песня про нас ♡</h2>
-<div class="music"><div class="track"><img src="assets/photo1.jpeg"><div><b>Мне с нею повезло</b><br><span class="muted">kurokov, mapt0v</span></div></div><div class="bar"><span></span></div><div class="center muted">♪ 00:00 &nbsp;&nbsp; 02:56 ♪</div></div>
-<p class="center">Ты — моя самая красивая история… ♡</p>
-<p class="center muted">Если захочешь добавить сам аудиофайл, положи его рядом с сайтом и подключи его к плееру.</p>
-<button class="btn" onclick="go(5)">Дальше →</button></div></section>
-
-<section class="page" id="p5"><div class="paper">
-<h2>Сюрприз 🎁</h2><div class="gift"><div class="box" onclick="openGift()">🎁</div></div>
-<p class="center" id="giftText">Нажми на подарок… и узнай, что я для тебя приготовил ♡</p>
-<button class="btn" onclick="go(6)">Дальше →</button></div></section>
-
-<section class="page" id="p6"><div class="paper">
-<h2>Мой цветочек ♡</h2>
-<p>Диана, я просто хочу, чтобы ты знала:</p>
-<p>я очень тебя люблю. Спасибо тебе за эти моменты, за поддержку, за наши разговоры и даже за то, как мы постоянно друг друга подшучиваем.</p>
-<p>Ты — моя любовь, моя малышка и мой цветочек.</p>
-<p>Я безумно рад, что ты рядом. Ты делаешь мою жизнь светлее, теплее и счастливее. ♡</p>
-<p class="center"><i>Твой любимый ♡</i></p>
-<button class="btn" onclick="go(7)">Последнее →</button></div></section>
-
-<section class="page final" id="p7"><div class="paper">
-<img src="assets/photo1.jpeg" style="width:100%;max-height:60svh;object-fit:cover;border-radius:22px" alt="">
-<h2>Я люблю тебя,<br>мой цветочек ♡</h2><p>Это было только для тебя…</p><p>Спасибо, что ты есть.</p>
-</div></section>
-
-<div class="nav">
-<button onclick="prev()">‹</button><button onclick="go(0)">♡</button><button onclick="next()">›</button>
-</div>
-<script>
-let cur=0, max=7;
-function go(n){cur=Math.max(0,Math.min(max,n));document.querySelectorAll('.page').forEach((p,i)=>p.classList.toggle('active',i===cur));window.scrollTo({top:0,behavior:'smooth'})}
-function next(){go(cur+1)} function prev(){go(cur-1)}
-function openGift(){document.getElementById('giftText').textContent='Я приготовил тебе одну простую вещь: ещё очень много наших моментов. ♡'}
-document.addEventListener('keydown',e=>{if(e.key==='ArrowRight')next();if(e.key==='ArrowLeft')prev()})
-</script>
-</body></html>
+<main class="wrap">
+  <img src="our_moments.png" alt="Наши моменты">
+</main>
+</body>
+</html>
